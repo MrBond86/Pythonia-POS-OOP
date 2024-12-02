@@ -1,28 +1,33 @@
-# Pythonia-POS-OOP
-A Point of Sales (POS) system for Pythonia, a serviced apartment company managing three buildings—Swan, Goose, and Duck. This system allows booking managers to process apartment bookings (1-7 nights), manage supplementary item orders, and generate receipts for guests. It has different level as per new features added.
-#Features
-#PASS Level (Core Functionality)
-  Guest Management: Add, view, and manage guests with unique IDs and reward points.
-  Product Management: Track apartment units and supplementary items with unique IDs, names, and prices.
-  Order Processing: Create and manage bookings, calculate costs, rewards, and generate formatted receipts.
-  Centralized Records: Store and retrieve guest and product data from text files.
-  CREDIT Level (Enhanced Functionality)
-  Automatic calculation of booking duration and booking timestamp.
-  Custom exception handling for input validation.
-  Support for bundled products with discounts.
-#DI Level (Advanced Features)
-  Support for multi-product orders.
-  Options to adjust global reward and redeem rates.
-#HD Level (Premium Features)
-  CSV-based order storage and reporting.
-  Generate key business statistics (e.g., top guests, popular products).
-  Support for command-line arguments to load guest, product, and order files.
+## Overview
+The project involves refactoring of apartment booking services by  an object-oriented architecture. This allows for better modularity, scalability, and maintainability of the system. The assignment covers advanced programming concepts such as inheritance, polymorphism, and custom exceptions.
 
-#How to Use
-    Clone the repository or download the code.
-    Ensure guests.txt and products.txt files are present in the same directory.
-    Run the program using Python:
-    bash
-    Copy code
-    python ProgFunA2_<YourStudentID>.py  
-    Follow the on-screen menu to perform operations like booking, viewing guests/products, and generating statistics.
+### Key Features
+1. **Guest and Product Management**:
+   - Object-oriented classes for `Guest`, `Product`, `ApartmentUnit`, and `SupplementaryItem`.
+   - Maintain records of guests, apartments, and supplementary items.
+
+2. **Order System**:
+   - Class `Order` for managing guest bookings.
+   - Include support for reward points and discount redemption.
+
+3. **Menu-driven Operations**:
+   - Interactive interface with options to add/update/view guests, apartments, and orders.
+   - Automatically handle invalid inputs using custom exceptions.
+
+4. **Data Persistence**:
+   - Read and write guest and product data from/to `.txt` files.
+   - Support for bundles as complex products with a discounted rate.
+
+### Steps to Run
+1. Clone this repository.
+2. Open the Python script file `ProgFunA2_<Your Student ID>.py`.
+3. Place the required data files (`guests.txt`, `products.txt`, etc.) in the same directory.
+4. Run the script in a Python interpreter.
+5. Use the menu-driven interface to manage bookings and view reports.
+
+### Tools and Libraries
+- Python (Standard Libraries: `sys`, `datetime`, `os`)
+- VSCode
+
+
+
